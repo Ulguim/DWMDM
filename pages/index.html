@@ -28,8 +28,6 @@
             <a href="#">About Us</a>
             <a href="#">Contact Us</a>       
         </div>
-
-        <button class="download-button">Download Now!</button>
         <div id="topNav" class="hideNav">  
             <div class="topNav__menu">
                 <a href="#">Home</a>
@@ -41,33 +39,8 @@
     </nav>
 </header>
 <body>
-
-    <section class="mainBox">
-        @@include('../src/components/defaultText.html')
-    </section>
-    <section class="categories">
-        <div class="categories__grid">
-            @@loop('../src/components/categoriesGrid.html',[ { "category":"Pizza","description":"20 Restaurants Foods" ,"url":'/src/assets/img/pizza.png'} , 
-            { "category":"Pasta","description":"15 Restaurants Foods" ,"url":'/src/assets/img/pasta.png'}, 
-            { "category":"Shakes","description":"20 Restaurants Foods" ,"url":'/src/assets/img/sorvete.png'},
-            { "category":"Burger","description":"20 Restaurants Foods" ,"url":'/src/assets/img/burguer.png'}])
-
-        </div>
-    </section>
-    <section class="features">
-        <div class="features__grid">
-            @@loop('../src/components/features.html',[ { "category":"Pizza","description":"Free Shipping on First Order" ,"url":'/src/assets/img/truckIcon.png'} , 
-            { "category":"Pasta","description":"Variety of Dishes" ,"url":'/src/assets/img/buguerIcon.png'}, 
-            { "category":"Burger","description":"Thirty Minutes Delivery" ,"url":'/src/assets/img/clockIten.png'}])
-
-        </div>
-    </section>
-    <section class="partners">   
-        <div class="partners__grid">  
-            @@loop('../src/components/gridImage.html',[ {"url":'/src/assets/img/foodchef.png',"alt":"alt"},{"url":'/src/assets/img/Lezatoz.png',"alt":"alt"},
-            {"url":'/src/assets/img/chefgateng.png',"alt":"alt"},{"url":'/src/assets/img/tastyfood.png',"alt":"alt"}
-            ])
-        </div>
+    <section class="banner">
+        @@include('../src/components/banner.html', {url: '../src/assets/img/bg.png', title: 'William Ulguim', paragraph: 'WEB DEVELOPER'})
     </section>
 
     <footer>

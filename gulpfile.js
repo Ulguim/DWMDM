@@ -30,15 +30,15 @@ gulp.task('copy-assets', function() {
         .pipe(gulp.dest('dist/src/assets'));
 });
 gulp.task('copy-components', function() {
-    return gulp.src('src/components/')
-        .pipe(gulp.dest('dist/src/components/*.html'));
+    return gulp.src('src/components/*')
+        .pipe(gulp.dest('dist/src/components/'));
 });
 
 gulp.task('watch', function() {
     gulp.watch('pages/**/*.html', gulp.series('fileinclude'));
     gulp.watch('src/css/**/*.scss', gulp.series('sass'));
     gulp.watch('src/assets/**/*', gulp.series('copy-assets'));
-    gulp.watch('src/components/**/*', gulp.series('copy-components'));
+    gulp.watch('src/components/*', gulp.series('copy-components', 'sass','copy-assets','fileinclude'));
 });
 
 gulp.task('default', gulp.series('fileinclude','copy-assets', 'sass', 'watch'));
