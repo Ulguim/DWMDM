@@ -1,0 +1,43 @@
+[
+    {
+        "url": "../src/assets/img/js.svg",
+        "name": "JAVSCRIPT"
+    },
+    {
+        "url": "../src/assets/img/ts.svg",
+        "name": "TYPESCRIPT"
+    },
+    {
+        "url": "../src/assets/img/react.svg",
+        "name": "REACT JS"
+    }, 
+    {
+        "url": "../src/assets/img/vue.svg",
+        "name": "VUE JS"
+    },
+    {
+        "url": "../src/assets/img/nest.svg",
+        "name": "NEST JS"
+    },
+    {
+        "url": "../src/assets/img/docker.svg",
+        "name": "DOCKER"
+    },
+    {
+        "url": "../src/assets/img/css.svg",
+        "name": "CSS"
+    },
+    {
+        "url": "../src/assets/img/sass.svg",
+        "name": "Sass"
+    },
+    {
+        "url": "../src/assets/img/git.png",
+        "name": "Git"
+    },
+    {
+        "url": "../src/assets/img/postgresql.svg",
+        "name": "Postgresql"
+    }
+   
+]

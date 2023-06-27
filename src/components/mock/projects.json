@@ -1,0 +1,16 @@
+[{
+  "url": "../src/assets/img/bg.png",
+  "title": "EazyRP WEB",
+  "paragraph": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+  "tecnologies": [ "NEXT JS","TYPESCRIPT","Chakra UI"]
+}, {
+  "url": "../src/assets/img/EazyRP.png",
+  "title": "EazyRP API",
+  "paragraph": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+  "tecnologies": ["NEST JS", "TYPEORM", "POSTGRESQL","DOCKER"]
+}, {
+  "url": "../src/assets/img/EazyRP.png",
+  "title": "William Ulguim",
+  "paragraph": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+  "tecnologies": ["HTML", "CSS", "JS"]
+}]
