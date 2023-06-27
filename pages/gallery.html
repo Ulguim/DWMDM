@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="import" href="../src/components/defaultText.html">
+    </link>
+    <link rel="stylesheet" href="../src/css/gallery.css">
+    <link rel="stylesheet" href="../src/css/global.css">
+    <script src="https://unpkg.com/@webcomponents/custom-elements"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="../src/assets/js/main.js"></script>
+    <title>William Ulguim - Gallery</title>
+</head>
+<header>
+ @@include('../src/components/navBar.html')
+</header>
+
+<body>
+    <section class="gallery">
+        <div class="photo-gallery">
+        @@loop('../src/components/galleryCards.html', '../src/components/mock/projects.json')
+        </div>
+    </section>
+  
+    <footer>
+        @@loop('../src/components/footer.html', '../src/components/mock/contact.json')
+    </footer>
+
+</body>
+
+</html>

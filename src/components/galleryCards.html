@@ -1,27 +1,28 @@
 <html>
-<div class="projects-card">
+<div class="gallery-card">
 
-    <div class="projects-card__title">
-        <div class="projects-card__image">
+    <div class="gallery-card__title">
+        <div class="gallery-card__image">
             <div class="image"
                 style="background: url('@@url'), lightgray 50% / cover no-repeat; background-position: center;">
             </div>
         </div>
         <h1>@@title</h1>
-        <div class="projects-card__buttons">
+        <div class="gallery-card__buttons">
             @@for(var i = 0; i < tecnologies.length; i++){ <button class="button">`+tecnologies[i]+`</button>
                 }
         </div>
     </div>
 
-    <div class="projects-card__description">
+    <div class="gallery-card__description">
 
-      
-        <p class="projects-card__description--text">@@paragraph</p>
-        <div class="projects-card__description--links">
+
+        <p class="gallery-card__description--text">@@paragraph</p>
+
+        <div class="gallery-card__description--links">
             <a href="@@github" target="_blank"><img src=@@icon alt="github"></a>
         </div>
+        </div>
     </div>
-</div>
 
 </html>

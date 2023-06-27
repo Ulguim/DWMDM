@@ -1,17 +1,19 @@
 <div class="footer">
-    ok
+
     <div class="footer__icons">
-        <div class="footer__icons--icon-box">
-            <img class="icon" src="" width="30px" height="30px" />
-            <p>GMAIL</p>
-        </div>
-        <div class="footer__icons--icon-box">
-            <img class="icon" src="" width="30px" height="30px" />
-            <p>GMAIL</p>
-        </div>
-        <div class="footer__icons--icon-box">
-            <img class="icon" src="" width="30px" height="30px" />
-            <p>GMAIL</p>
-        </div>
+        @@for(var i = 0; i < data.length; i++){
+            <div class="footer__icons--icon-box">
+                <a href=`+data[i].link+`>
+                <img class="icon" src=`+data[i].url+` width="30px" height="30px" />
+                <p> `+data[i].name+`</p></a>
+            </div>
+        }
+    </div>
+    <div class="footer__links">
+        <a href="/gallery.html">Projects</a>
+        <a href="/contactForm.html">Contact</a>
+    </div>
+    <div class="footer__copy">
+        <p>© 2023 William Ulguim. All rights reserved.</p>
     </div>
 </div>

@@ -1,0 +1,111 @@
+@import 'fonts';
+
+body {
+    background-color: #041F31;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+header {
+
+    margin: 0;
+    width: 100%;
+
+}
+
+
+footer {
+
+    margin: 0;
+    width: 100%;
+}
+
+.form {
+    margin-inline: auto;
+    width: 532px;
+
+    @media (max-width: 768px) {
+        display: flex;
+     
+        max-width: 100%;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+
+        label {
+            color: #BDEBEA;
+            font-family: Montserrat;
+            font-size: 14px;
+        }
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-inline: 20px;
+    }
+
+
+
+}
+
+
+
+.text-input {
+
+    background-color: transparent;
+    border: 1px solid #BDEBEA;
+    border-radius: 6px;
+    height: 48px;
+    width: 100%;
+    color: #BDEBEA;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    
+   
+}
+
+.text-area {
+    background-color: transparent;
+    border: 1px solid #BDEBEA;
+    border-radius: 6px;
+    color: #BDEBEA;
+    height: 48px;
+    height: 200px;
+    width: 100%;
+
+
+}
+
+
+
+
+
+.full-width {
+    width: 100%;
+}
+
+// Remove cor do autofill
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid white;
+  -webkit-text-fill-color: #BDEBEA !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

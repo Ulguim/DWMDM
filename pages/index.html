@@ -8,39 +8,19 @@
     <link rel="import" href="../src/components/defaultText.html">
     </link>
     <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/global.css">
     <script src="https://unpkg.com/@webcomponents/custom-elements"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-    <script src="../src/assets/js/hideNav.js"></script>
-    <title>DWM</title>
+    <script src="../src/assets/js/main.js"></script>
+    <title>William Ulguim - Home</title>
 </head>
 <header>
-    <nav class="nav">
-  
-            <img  class="burguerButton" style="width: 25px; height: 25px; margin-top: auto;margin-bottom: auto;" src="../src/assets/img/navbar.png" alt="burguerButton" onclick="handleTopnav()">
-      
-        <div class="nav__logo">
-            
-          <p>FOODMOOD</p>
-        </div>
-        <div class="nav__menu">
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>       
-        </div>
-        <div id="topNav" class="hideNav">  
-            <div class="topNav__menu">
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>       
-            </div>
-        </div>
-    </nav>
+        @@include('../src/components/navBar.html')
 </header>
+
 <body>
     <section class="banner">
-        @@include('../src/components/banner.html', {url: '../src/assets/img/bg.png', title: 'William Ulguim', paragraph: 'WEB DEVELOPER'})
+        @@include('../src/components/banner.html', {url: '../src/assets/img/bg.png', title: 'William Ulguim', paragraph:'WEB DEVELOPER'})
     </section>
 
 
@@ -48,22 +28,22 @@
         @@include('../src/components/about.html')
     </section>
 
-    <section class="projects" >
+    <section class="projects">
         <div class="photo-gallery">
-        @@loop('../src/components/projects.html', '../src/components/mock/projects.json')
-        <div>
-        <button class="button">See my Projects</button>
-    </div>
-    </div>
+            @@loop('../src/components/projects.html', '../src/components/mock/projects.json')
+        </div>
+        <div class="projects--button">
+            <a href="/gallery.html"> <button class="button">See my Projects</button></a>
+        </div>
     </section>
 
     <section class="skills">
         @@loop('../src/components/skills.html', '../src/components/mock/skills.json')
     </section>
     <footer>
-        @@include('../src/components/footer.html', '../src/components/mock/contact.json')
+        @@loop('../src/components/footer.html', '../src/components/mock/contact.json')
     </footer>
-   
+
 </body>
 
 </html>

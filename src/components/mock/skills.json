@@ -8,6 +8,10 @@
         "name": "TYPESCRIPT"
     },
     {
+        "url": "../src/assets/img/Java.svg",
+        "name": "JAVA"
+    },
+    {
         "url": "../src/assets/img/react.svg",
         "name": "REACT JS"
     }, 

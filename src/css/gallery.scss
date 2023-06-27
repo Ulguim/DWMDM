@@ -1,0 +1,252 @@
+@import 'fonts';
+
+body {
+    background-color: #041F31;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+header {
+
+    margin: 0;
+    width: 100%;
+
+}
+
+
+footer {
+
+    margin: 0;
+    width: 100%;
+}
+
+.nav {
+    color: var(--text, #BDEBEA);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+
+    .topNav {
+        display: none;
+    }
+
+    .hideNav {
+        display: none;
+    }
+
+    .burguerButton {
+        display: none;
+    }
+
+
+
+    &__logo {
+        color: white;
+        width: 100px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        margin-right: 40px;
+        margin-top: 20px;
+        width: 100%;
+
+        a {
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 40px;
+            text-decoration: none;
+
+
+        }
+    }
+
+}
+.photo-gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 917px) {
+        grid-template-columns: 1fr;
+    }
+        
+    
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-inline: auto;
+    margin-top: 100px;
+    width: 70%;
+
+    &--button {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    @media (max-width: 192px) {
+        width: 100%;
+    }
+
+}
+
+.gallery-card {
+    background: #222525;
+    border-radius: 6px;
+
+    @media (min-width: 768px) {
+        min-height: 600px;
+    }
+        
+ 
+
+    
+
+    &__title {
+        color: var(--title, #D9F2F2);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    &__description {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 20px;
+
+
+        &--text {
+            color: #BDEBEA;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.64px;
+            line-height: 24px;
+
+        }
+        &--links{
+            margin-bottom: 20px;
+            position: sticky;
+            &:hover {
+                animation: buttonAnimation 2s infinite;
+                -webkit-transition: background-color 2s ease-out;
+                -moz-transition: background-color 2s ease-out;
+                -o-transition: background-color 2s ease-out;
+                transition: background-color 2s ease-out;
+            }
+        
+            @keyframes buttonAnimation {
+                0% {   
+                    transform: scale(1);
+                }
+            
+                25% {
+               
+                    transform: scale(1);
+                }
+            
+                50% {
+                  
+                    transform: scale(1.1);
+                }
+            
+                75% {
+        
+                    transform: scale(1.1);
+                }
+            
+                100% {
+                
+                    transform: scale(1);
+                }
+            }
+        }
+
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+
+    }
+
+    .image {
+        background-position: center;
+        border-radius: 6px;
+        height: 200px;
+        overflow: hidden;
+        width: auto;
+    }
+}
+
+
+
+
+
+.text-input {
+
+    background-color: transparent;
+    border: 1px solid #BDEBEA;
+    border-radius: 6px;
+    height: 48px;
+    width: 100%;
+    color: #BDEBEA;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    
+   
+}
+
+.text-area {
+    background-color: transparent;
+    border: 1px solid #BDEBEA;
+    border-radius: 6px;
+    color: #BDEBEA;
+    height: 48px;
+    height: 200px;
+    width: 100%;
+
+
+}
+
+
+
+
+.full-width {
+    width: 100%;
+}
+
+// Remove cor do autofill
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid white;
+  -webkit-text-fill-color: #BDEBEA !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

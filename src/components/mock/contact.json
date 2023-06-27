@@ -1,12 +1,22 @@
-{
-    "icons": [
-        {
-            "url": "../src/img/gmail.svg",
-            "name": "GMAIL"
-        },
-        {
-            "url": "../src/img/gmail.svg",
-            "name": "GMAIL"
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "data": [
+            {
+                "url": "../src/assets/img/gmail.svg",
+                "name": "GMAIL",
+                "link": "mailto:"
+            },
+            {
+                "url": "../src/assets/img/github.svg",
+                "name": "Github",
+                "link": "https://github.com/Ulguim"
+            },
+            {
+                "url": "../src/assets/img/linkedin.svg",
+                "name": "Linkedin",
+                "link": "https://linkedin.com/in/william-da-silva-589403163"
+            }
+        ]
+    }
+]

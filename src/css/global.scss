@@ -1,0 +1,224 @@
+.footer {
+    margin-top: 100px;
+
+    padding-bottom: 20px;
+
+    width: 100%;
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        &--icon-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .icon {
+                margin-inline: auto;
+            }
+
+            &:hover {
+
+                animation: buttonAnimation 2s infinite;
+                -webkit-transition: background-color 2s ease-out;
+                -moz-transition: background-color 2s ease-out;
+                -o-transition: background-color 2s ease-out;
+                transition: background-color 2s ease-out;
+
+                p {
+                    color: #00D9F5;
+                }
+            }
+
+            @keyframes buttonAnimation {
+                0% {
+                    transform: scale(1);
+                }
+
+                25% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                75% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            p {
+                color: #BDEBEA;
+                font-size: 12px;
+                letter-spacing: 1.44px;
+                line-height: 11.105px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+
+
+        a {
+
+            color: #BDEBEA;
+            font-size: 14px;
+            text-decoration: none;
+
+            &:hover {
+                color: #00D9F5;
+                transition: 0.5s;
+                scale: 1.1;
+            }
+
+        }
+    }
+
+    &__copy {
+        color: var(--text, #BDEBEA);
+        text-align: center;
+        font-size: 14px;
+
+        line-height: 26px;
+        letter-spacing: 0.56px;
+    }
+}
+
+
+
+.button {
+    align-items: center;
+    background: linear-gradient(to right, #00F5A0, #00D9F5);
+    border: none;
+    border-radius: 4px;
+    color: var(--title, #1F2626);
+    display: flex;
+    font-family: Montserrat;
+    font-size: 10px;
+    justify-content: center;
+    letter-spacing: 1.2px;
+    line-height: 14px;
+    padding: 8px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        color: var(--title, #1F2626);
+    }
+    @keyframes buttonAnimation {
+        0% {
+            // background: linear-gradient(to right, #00D9F5, #00F5A0);
+            transform: scale(1);
+        }
+
+        25% {
+            // background: linear-gradient(to right, #00D9F5, #00D9F5);
+            transform: scale(1);
+        }
+
+        50% {
+            // background: linear-gradient(to right, #00F5A0, #00F5A0);
+            transform: scale(1.1);
+        }
+
+        75% {
+            // background: linear-gradient(to right, #00F5A0, #00D9F5);
+            transform: scale(1.1);
+        }
+
+        100% {
+            // background: linear-gradient(to right, #00D9F5, #00F5A0);
+            transform: scale(1);
+        }
+    }
+
+    &:hover {
+        animation: buttonAnimation 2s infinite;
+        -webkit-transition: background-color 2s ease-out;
+        -moz-transition: background-color 2s ease-out;
+        -o-transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out;
+    }
+}
+
+
+.nav {
+    color: var(--text, #BDEBEA);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+
+    .topNav {
+        display: none;
+    }
+
+    .hideNav {
+        display: none;
+    }
+
+    .burguerButton {
+        display: none;
+    }
+
+   
+
+    &__logo {
+        color: white;
+        width: 100px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 40px;
+        margin-top: 20px;
+        width: 100%;
+
+        a {
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 40px;
+            text-decoration: none;
+            &:active{
+                color:  #1F2626 !important ;
+            }
+            &:hover {
+                color: #00D9F5;
+                transition: 0.5s;
+                scale: 1.1;
+            }
+        }
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
