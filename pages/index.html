@@ -43,6 +43,23 @@
         @@include('../src/components/banner.html', {url: '../src/assets/img/bg.png', title: 'William Ulguim', paragraph: 'WEB DEVELOPER'})
     </section>
 
+
+    <section>
+        @@include('../src/components/about.html')
+    </section>
+
+    <section class="projects" >
+        <div class="photo-gallery">
+        @@loop('../src/components/projects.html',  [{url: '../src/assets/img/bg.png', title: 'EazyRP', paragraph: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'},{url: '../src/assets/img/EazyRP.png', title: 'William Ulguim', paragraph: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'}])
+        <div>
+        <button class="button">See my Projects</button>
+    </div>
+    </div>
+    </section>
+
+    <section>
+     @@loop('../src/components/skills.html', [{url: '../src/assets/img/html.png', name: 'HTML'}, {url: '../src/assets/img/css.png', name: 'CSS'}, {url: '../src/assets/img/js.png', name: 'Javascript'}, {url: '../src/assets/img/sass.png', name: 'Sass'}, {url: '../src/assets/img/git.png', name: 'Git'}, {url: '../src/assets/img/github.png', name: 'Github'}, {url: '../src/assets/img/figma.png', name: 'Figma'}])
+    </section>
     <footer>
         @@include('../src/components/footer.html')
     </footer>
