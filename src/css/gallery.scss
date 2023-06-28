@@ -74,6 +74,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     @media (max-width: 917px) {
         grid-template-columns: 1fr;
+        margin-inline: 20px
     }
         
     
@@ -96,8 +97,9 @@ footer {
         width: 100%;
     }
 
-    @media (max-width: 192px) {
+    @media (max-width: 600px) {
         width: 100%;
+      
     }
 
 }

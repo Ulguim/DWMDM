@@ -123,6 +123,7 @@
     padding: 8px 16px;
     text-align: center;
     text-transform: uppercase;
+
     a {
         text-decoration: none;
         color: var(--title, #1F2626);
@@ -161,8 +162,15 @@
         -o-transition: background-color 2s ease-out;
         transition: background-color 2s ease-out;
     }
+
 }
 
+.submit-button[disabled] {
+    background: #111414 !important;
+    color: #1F2626;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 
 .nav {
     color: var(--text, #BDEBEA);

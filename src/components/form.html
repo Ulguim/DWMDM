@@ -2,27 +2,48 @@
 <div class="form">
 
 
-    <form class="form__body">
-        <div class="form__item">
+    <form id="contact-form" action="https://formspree.io/f/xpzgallz" method="POST" class="form__body">
+        <div  class="form__item">
             <label>Name</label>
-            <input class="text-input" type="text" name="name" placeholder="Name">
+            <input  required  class="text-input" type="text" name="name" placeholder="Name">
         </div>
-        <div class="form__item">
+        <div  class="form__item">
             <label>Email</label>
-            <input class="text-input" type="email" name="email" placeholder="Name">
+            <input  required class="text-input" type="email" name="email" placeholder="Name">
         </div>
         <div class="form__item">
             <label>Message</label>
-            <textarea class="text-area" type="email" name="email" placeholder="Name">
-                Type your message here...
-            </textarea>
+            <textarea class="text-area" name="Message" placeholder="Type your message here..."></textarea>
             
         </div>
-        <div class="form__submit-area">
-        <button type="submit" class="button full-width">Submit</button>
-    </div>
+        <div class="form__item">
+            <label id="fileLabel" for="file" class="input-file"  >Chose a file</label>
+            <input onclick="showFileName()"  id="file" class="input-file" type="file" multiple name="upload">
+            <div id="fileName" class="file-name"></div>
+        </div>
+        <div  class="form__submit-area">
+            <button id="submit-button"  type="submit" class="button submit-button full-width">Submit</button>
+        </div>
     </form>
-
+    <script>
+        $(document).ready(function() {
+      
+          var formulario = new Pristine("#contact-form");
+    
+          formulario.addValidator("#submit-button", function() {
+            return !formulario.validate();
+          });
+      
+          $("#contact-form input").on("input", function() {
+            if (formulario.validate()) {
+              $("#submit-button").prop("disabled", false);
+            } else {
+              $("#submit-button").prop("disabled", true);
+            }
+          });
+        });
+      </script>
+      
 </div>
 
 </html>
