@@ -1,8 +1,53 @@
-[{
-  "url": "../src/assets/img/bg.png",
-  "title": "EazyRP WEB",
-  "paragraph": "The proposed system aims to become a facilitator in financial administration and projection, as even with the wide range of tools available in the market, it becomes difficult to use such tools due to being a cluster of functions that complicates the user's life.",
-  "tecnologies": [ "NEXT JS","TYPESCRIPT","Chakra UI"],
-  "github":"https://github.com/EazyRP/visaoetimos-web",
-  "icon":"../src/assets/img/github.svg"
-}]
+[
+  {
+    "url": "../src/assets/img/bg.png",
+    "title": "EazyRP WEB",
+    "paragraph": "The proposed system aims to become a facilitator in financial administration and projection, as even with the wide range of tools available in the market, it becomes difficult to use such tools due to being a cluster of functions that complicates the user's life.",
+    "tecnologies": [
+      "NEXT JS",
+      "TYPESCRIPT",
+      "Chakra UI"
+    ],
+    "github": "https://github.com/EazyRP/visaoetimos-web",
+    "icon": "../src/assets/img/github.svg"
+  },
+  
+  {
+    "url": "../src/assets/img/EazyRP.png",
+    "title": "EazyRP API",
+    "paragraph": "The proposed system aims to become a facilitator in financial administration and projection, as even with the wide range of tools available in the market, it becomes difficult to use such tools due to being a cluster of functions that complicates the user's life.",
+    "tecnologies": [
+      "NEST JS",
+      "TYPEORM",
+      "POSTGRESQL",
+      "DOCKER"
+    ],
+    "github": "https://github.com/EazyRP/visaoetimos-api",
+    "icon": "../src/assets/img/github.svg"
+  },
+  {
+    "url": "https://cdn.dribbble.com/users/808903/screenshots/3831862/dribbble_szablon__1_1.png",
+    "title": "My First API",
+    "paragraph": "This was one of my first tests to enter the technology field, and it truly marked the beginning of my journey. This project utilizes backend technologies that I am most familiar with.",
+    "tecnologies": [
+      "NEST JS",
+      "TYPEORM",
+      "POSTGRESQL",
+      "DOCKER"
+    ],
+    "github": "https://github.com/Ulguim/brainny-estagio-api",
+    "icon": "../src/assets/img/github.svg"
+  },
+  {
+    "url": "../src/assets/img/dwm.png",
+    "title": "DWM",
+    "paragraph": "This project aims to enhance my knowledge in some emerging technologies, such as Gulp. In this project, I utilize not only Gulp but also other tools, like SCSS for styling, to facilitate component creation.",
+    "tecnologies": [
+      "GULP",
+      "HTML",
+      "SASS"
+    ],
+    "github": "https://github.com/Ulguim/DWM",
+    "icon": "../src/assets/img/github.svg"
+  }
+]

@@ -37,6 +37,16 @@ footer {
         margin-inline: auto;
         width: 70%;
 
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-inline: 20px;
+            text-align: center;
+        }
+            
+        
+
+
+
         .text-paragraph {
             color: #D7E5EC;
             font-family: Tinos;
@@ -57,9 +67,10 @@ footer {
             img {
                 height: auto;
                 width: 50%;
-                @media (max-width: 1100px ) and (min-width: 780px) {
+
+                @media (max-width: 1100px) and (min-width: 780px) {
                     width: 30%;
-                 }
+                }
             }
         }
 
@@ -74,38 +85,48 @@ footer {
             margin: 0;
             -webkit-text-fill-color: transparent;
 
-            
-    }
 
-    .text-message {
-        color: var(--text, #BDEBEA);
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        letter-spacing: 0.64px;
-        line-height: 24px;
+        }
+
+        .text-message {
+            color: var(--text, #BDEBEA);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.64px;
+            line-height: 24px;
 
 
-        width: 514px;
+            width: 514px;
 
-        @media (max-width: 768px) {
-            width: 100%;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
         }
 
     }
 
 }
 
+.about-me {
+    width: 100%;
+    display: flex;
 }
 
-.about-me {
+.about-me-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: auto;
     width: 70%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-inline: 20px;
+    }
 
     &__info {
         display: flex;
@@ -157,16 +178,13 @@ footer {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-   
+
     @media (max-width: 1000px) {
         grid-template-columns: 1fr;
         margin-inline: 20px;
     }
-    @media (max-width: 500px) {
-      
-    
-        
-    }
+
+    @media (max-width: 500px) {}
 
 
 }
