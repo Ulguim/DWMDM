@@ -2,7 +2,8 @@
 <div class="form">
 
 
-    <form id="contact-form" action="https://formspree.io/f/xpzgallz" method="POST" class="form__body">
+    <form id="contact-form"  action="https://formkeep.com/f/ce0e9784a845" method="POST"   accept-charset="UTF-8"
+       enctype="multipart/form-data"" class="form__body">
         <div  class="form__item">
             <label>Name</label>
             <input  required  class="text-input" type="text" name="name" placeholder="Name">
@@ -17,14 +18,15 @@
             
         </div>
         <div class="form__item">
-            <label id="fileLabel" for="file" class="input-file"  >Chose a file</label>
-            <input onclick="showFileName()"  id="file" class="input-file" type="file" multiple name="upload">
+            <label id="fileLabel" for="file-field" class="input-file bounce-keyframe"  >Chose a file</label>
+            <input onclick="showFileName()"  id="file-field" class="input-file" type="file" name="file-field">
             <div id="fileName" class="file-name"></div>
         </div>
         <div  class="form__submit-area">
-            <button id="submit-button"  type="submit" class="button submit-button full-width">Submit</button>
+            <button id="submit-button"   type="submit" class="button submit-button full-width bounce-keyframe">Submit</button>
         </div>
     </form>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         $(document).ready(function() {
       
@@ -41,6 +43,7 @@
               $("#submit-button").prop("disabled", true);
             }
           });
+
         });
       </script>
       
