@@ -180,7 +180,8 @@ footer {
     grid-template-columns: 1fr 1fr;
 
     @media (max-width: 1000px) {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         margin-inline: 20px;
     }
 
@@ -288,6 +289,7 @@ footer {
         flex-direction: row;
         gap: 10px;
         width: 100%;
+        flex-wrap: wrap;
 
     }
 
