@@ -16,12 +16,9 @@ const showFileName = () => {
     document.getElementById('file-field').addEventListener('change', function (e) {
         // document.querySelector('#fileName').innerHTML = '';
         let wrapper = document.getElementById('fileName');
-        let fileElement = `<p> ${e.target.files[0].name} </p> <i class="fa fa-sheet-plastic fa-lg"></i>`;
+        let fileElement = `<p> ${e.target.files[0].name}  <i onclick="removeFile()" class="fa-solid fa-circle-xmark"></i> </p>`;
         if (e.target.files[0]) {
-
-
             wrapper.innerHTML = fileElement;
-            console.log("🚀 ~ file: main.js:23 ~ wrapper:", wrapper)
         }
     });
 
@@ -32,8 +29,12 @@ const showFileName = () => {
 }
 
 const removeFile = () => {
-    document.getElementById('file-field').value = '';
-
+ 
+   let x = document.getElementById('file-field');
+    x.value = '';
+    x.files = null;
+    let wrapper = document.getElementById('fileName');
+    wrapper.innerHTML = '';
 }
 
 const resetForm = () => {
