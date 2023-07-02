@@ -14,12 +14,11 @@ function handleTopnav() {
 const showFileName = () => {
     let button = document.getElementById('file');
     document.getElementById('file-field').addEventListener('change', function (e) {
-        document.querySelector('#fileName').innerHTML = '';
+        // document.querySelector('#fileName').innerHTML = '';
+        let wrapper = document.getElementById('fileName');
+        let fileElement = `<p> ${e.target.files[0].name}  <i onclick="removeFile()" class="fa-solid fa-circle-xmark"></i> </p>`;
         if (e.target.files[0]) {
-            var fileNameElement = document.createElement('p');
-            fileNameElement.textContent = e.target.files[0].name;
-
-            document.querySelector('#fileName').appendChild(fileNameElement);
+            wrapper.innerHTML = fileElement;
         }
     });
 
@@ -29,6 +28,14 @@ const showFileName = () => {
     output.textContent = input.files[0].name;
 }
 
+const removeFile = () => {
+ 
+   let x = document.getElementById('file-field');
+    x.value = '';
+    x.files = null;
+    let wrapper = document.getElementById('fileName');
+    wrapper.innerHTML = '';
+}
 
 const resetForm = () => {
 

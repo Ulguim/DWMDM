@@ -20,12 +20,8 @@
         "name": "VUE JS"
     },
     {
-        "url": "../src/assets/img/nest.svg",
-        "name": "NEST JS"
-    },
-    {
-        "url": "../src/assets/img/docker.svg",
-        "name": "DOCKER"
+        "url": "../src/assets/img/html.svg",
+        "name": "HTML"
     },
     {
         "url": "../src/assets/img/css.svg",
@@ -36,12 +32,25 @@
         "name": "Sass"
     },
     {
-        "url": "../src/assets/img/git.png",
-        "name": "Git"
+        "url": "../src/assets/img/gulp.svg",
+        "name": "GULP" 
     },
+    {
+        "url": "../src/assets/img/nest.svg",
+        "name": "NEST JS"
+    },
+    {
+        "url": "../src/assets/img/docker.svg",
+        "name": "DOCKER"
+    },
+  
     {
         "url": "../src/assets/img/postgresql.svg",
         "name": "Postgresql"
+    },
+    {
+        "url": "../src/assets/img/git.png",
+        "name": "Git"
     }
    
 ]

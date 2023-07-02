@@ -1,25 +1,6 @@
 @import 'fonts';
 
-body {
-    background-color: #041F31;
-    height: 100vh;
-    margin: 0;
-    width: 100%;
-}
 
-header {
-
-    margin: 0;
-    width: 100%;
-
-}
-
-
-footer {
-
-    margin: 0;
-    width: 100%;
-}
 
 .nav {
     color: var(--text, #BDEBEA);
@@ -203,9 +184,11 @@ footer {
     }
 
     .image {
-        background-position: center;
+        background-position: center !important;
+        background-size: auto;
+        background-repeat: no-repeat !important;
         border-radius: 6px;
-        height: 200px;
+        height: 300px;
         overflow: hidden;
         width: auto;
     }

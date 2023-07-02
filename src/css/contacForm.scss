@@ -1,18 +1,5 @@
 @import 'fonts';
 
-body {
-    background-color: #041F31;
-    height: 100vh;
-    margin: 0;
-    width: 100%;
-}
-
-header {
-
-    margin: 0;
-    width: 100%;
-
-}
 
 
 footer {
@@ -118,7 +105,7 @@ input[type="file"] {
     background: linear-gradient(to right, #00D9F5, #00F5A0);
     border: 1px solid #BDEBEA;
     border-radius: 6px;
-    color: #1F2626;
+    color: #1F2626 !important;
     text-align: center;
 }
 
