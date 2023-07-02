@@ -1,6 +1,6 @@
-# Nome do Aplicativo
+# Portifólio
 
-Landing Page [William Ulguim](https://william-ulguim.bohr.io/)
+Portifólio [William Ulguim](https://william-ulguim.bohr.io/)
 
 1. Certifique-se de ter o Node.js instalado em seu sistema. Caso não tenha, faça o download e a instalação a partir do [site oficial do Node.js](https://nodejs.org).
 
